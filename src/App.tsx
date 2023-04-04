@@ -1,7 +1,9 @@
+import './styleTest.scss'
+
 function App() {
 
   return (
-    <div className="App">
+    <div className="app">
       Aqui
     </div>
   )
