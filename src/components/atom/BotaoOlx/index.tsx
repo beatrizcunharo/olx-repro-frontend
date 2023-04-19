@@ -13,8 +13,10 @@ export const BotaoOlx = (props: BotaoOlxProps) => {
 
     return (
         <button
-            className={`botaoOlx 
-                ${style} ${cor && cor === "primaria" ? "cor_primaria" : cor === "secundaria" ? "cor_secundaria" : ""}
+            className={`
+                ${style ?? style} 
+                botaoOlx 
+                ${cor && cor === "primaria" ? "cor_primaria" : cor === "secundaria" ? "cor_secundaria" : ""}
                 ${tamanho && tamanho === "medio" ? "tam_medio" : tamanho === "grande" ? "tam_grande" : ""}
             `}
             aria-label={texto}
